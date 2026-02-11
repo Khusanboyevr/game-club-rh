@@ -26,5 +26,5 @@ export const getRoom = function (fn: (room: FullRoomType[]) => void) {
     })
 }
 export const deleteRoom = async function (roomId: string) {
-    return  deleteDoc(doc(db, "rooms", roomId))
+    return deleteDoc(doc(db, "rooms", roomId))
 }
